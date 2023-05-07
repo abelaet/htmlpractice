@@ -1,7 +1,7 @@
 *{
   box-sizing: border-box;
-  padding: 0.%;
-  margin: 0.%cm;
+  padding: 0;
+  margin: 0;
 }
 body {
     background-color: rgb(193, 243, 255);
@@ -10,15 +10,14 @@ body {
         color: blue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size:15px;
-    padding-left: 0cap; margin-left: 10px;
 
 }
 .header{
     padding: 10px;
     margin-bottom: 10px;
-    margin-left: 10px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(40, 221, 212);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     font-style:italic;
     font-size: 20px;
 }
@@ -26,6 +25,7 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
+    display: flex;
     color: rgb(255, 255, 255);
     background-color: rgb(221, 241, 128);
     font-style:italic;
@@ -76,6 +76,7 @@ a:hover{
     padding: 0;
     overflow: hidden;
     background-color:gray;
+    width: 100%;
   }
   
   li {
@@ -84,7 +85,7 @@ a:hover{
   
   a {
     display: block;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -93,5 +94,29 @@ a:hover{
   li a:hover {
     background-color:black;
   }
+  .main{
+    margin: 10px;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  body{
+    background-color: aqua;
+  }
+  .wraper{
+    width: 500px;
+    display: flex;
+  }
+  .btn{
+    color: rgb(255, 255, 255);
+    font-size: small;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+   border: 2px solid red;
+    padding: 10px;
+    margin: 5px;
+  }
+  
 
 
