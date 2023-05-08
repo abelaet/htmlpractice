@@ -7,10 +7,16 @@ body {
     background-color: rgb(193, 243, 255);
     }
     p{
-        color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size:15px;
-
+        color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font: size 16px;px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.h2{
+  text-align: center;
+  margin-top: 20px;
 }
 .header{
     padding: 10px;
@@ -22,44 +28,35 @@ body {
     font-size: 20px;
 }
 .list{
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    display: flex;
-    color: rgb(255, 255, 255);
-    background-color: rgb(221, 241, 128);
-    font-style:italic;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  margin: 10px;
+  padding:10px;
+  text
+}
+.image {
+  margin: 10px 10px;
+  border-radius: 10px;
+  padding: 5px;
+  border: 2px solid rgb(0, 0, 0);
+  max-width: fit-content;
+  box-shadow: 2px 2px 4px #292828;}
+
+  .li{
     font-size: 20px;
-}
-a{
-    /* display: block;
-    padding: 8px;
-    background-color: rgb(47, 131, 241);
-    margin: 10px; */
-}
-/* .section{
-    border-radius: 10px;
-    box-shadow: rgb(77, 5, 77);
-    border: 1px solid red;
-    padding: 20px;
-    margin: 10px;
-    background-color: aquamarine;
-} */
-/* .article{
-    border-radius: 10px;
-    box-shadow: rgb(77, 5, 77);
-    border: 1px solid red;
-    background-color: aquamarine;
-    padding: 10px; */ */
-ul > li{
-    list-style-type: none;
-    padding: 10px;
-    margin:10px;
-    padding-left: 15px;
-}
+
+  }
 a{
     text-decoration: none;
-    color: rgb(0, 68, 255);
+    color: rgb(255, 255, 255);
     /* border: 2px solid rgb(255, 255, 255); */
     padding: 2px;
 
@@ -67,33 +64,7 @@ a{
     /* box-shadow:rgb(133, 133, 194);
     background-color: rgb(255, 255, 255); */
 }
-a:hover{
-    color: rgb(255, 0, 0);
-}
- ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:gray;
-    width: 100%;
-  }
   
-  li {
-    float: left;
-  }
-  
-  a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color:black;
-  }
   .main{
     margin: 10px;
   }
@@ -102,21 +73,193 @@ a:hover{
     grid-template-columns: repeat(4,1fr);
   }
   body{
-    background-color: aqua;
+    background-color: rgb(220, 235, 251);
   }
   .wraper{
     width: 500px;
     display: flex;
   }
-  .btn{
-    color: rgb(255, 255, 255);
-    font-size: small;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-   border: 2px solid red;
-    padding: 10px;
-    margin: 5px;
-  }
   
+  nav {
+    background-color:  rgb(118, 118, 118);
+    display: flex;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px #292828;
+    list-style-type:none;
+
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    margin:10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    
+    background-color: #000000;
+    margin:10px;
+    padding: 5px 10px;
+    color: #ff0000;
+    transition-duration: 0.4s;
+    
+}
+.hover{
+   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  
+}
+table {
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 10px;
+  border: 3px solid rgb(0, 0, 0);
+  max-width: fit-content;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 4px #292828;
+  font-size: 20px;
+  
+}
+th,td{
+  padding: 25px;
+  text-align: center;
+}
+.grid{
+  background-color: #a19494;
+  max-width: fit-content;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: grid;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px;
+  box-sizing: border-box; 
+  grid-template-columns: repeat(4, 75px);
+
+}
+button{
+height: 60px;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  margin: 5px;
+  min-height: 50px;
+  box-shadow: 0 8px 15px -7px rgb(0, 0, 0);
+  background: #ffffff;
+}
+.Display {
+  grid-column: span 4;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+ .btn1{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: large;
+  font-weight: bold;
+}
+ .btn2{
+background-color:gray;
+color: white;
+font-size: large;
+font-weight: bold;
+}
+.btn3 {
+background-color: rgb(0, 64, 255);
+color: white;
+font-size: large;
+font-weight: bold;
+}
+.btn4 {
+  background-color: rgb(238, 0, 0);
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+.btn1:hover {
+  background-color: gray;
+}
+.btn2:hover {
+  background-color: rgb(0, 0, 0);
+}
+.btn3:hover {
+  background-color: rgb(223, 0, 0);
+}
+.btn4:hover {
+  background-color: rgba(6, 35, 255, 0.975);
+}
+input[type="text"],
+input[type="Password"],
+input[type="tel"],
+input[type="email"],
+ select,textarea{
+    width: 50%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid  rgb(32, 109, 30);;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+input::placeholder {
+    color: rgb(0, 0, 0);
+  }
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: solid 0.5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff0000;
+}
+ div{
+  margin: 20px;
+ }
+ label{
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+ }
+form {
+    position: relative;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px solid rgb(32, 109, 30);
+    max-width: fit-content;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #4545ef;
+    box-shadow: 2px 2px 4px #292828;
+  }
+
+
 
 
