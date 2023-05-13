@@ -2,10 +2,18 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+ 
 }
-body {
-    background-color: rgb(193, 243, 255);
-    }
+body{
+  background-color:rgb(255, 255, 255);
+}
+@media(min-width: 300px){
+  body{
+    background-color: #000000;
+  }
+
+}
+
     p{
         color: rgb(0, 0, 0);
     font-family: 'Times New Roman', Times, serif;
@@ -40,20 +48,37 @@ body {
   color: black;
   margin: 10px;
   padding:10px;
-  text
 }
 .image {
-  margin: 10px 10px;
+  margin: 20px;
   border-radius: 10px;
   padding: 5px;
   border: 2px solid rgb(0, 0, 0);
   max-width: fit-content;
-  box-shadow: 2px 2px 4px #292828;}
+  box-shadow: 2px 2px 4px #292828;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
 
   .li{
     font-size: 20px;
 
   }
+  li{
+    list-style-position: inside;
+  }
+  ol{
+    background-color: #a8a2a2;
+  }
+  ol li {
+    background: #a8a2a2;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 5px;
+    margin-left: 25px;}
 a{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -72,22 +97,20 @@ a{
     display: grid;
     grid-template-columns: repeat(4,1fr);
   }
-  body{
-    background-color: rgb(220, 235, 251);
-  }
+  
   .wraper{
     width: 500px;
     display: flex;
   }
   
   nav {
-    background-color:  rgb(118, 118, 118);
+    background-color:  rgb(137, 137, 137);
     display: flex;
     justify-content: left;
     padding: 0;
     margin: 0;
     overflow: hidden;
-    box-shadow: 2px 2px 4px #292828;
+    box-shadow: 2px 2px 4px #ffffff;
     list-style-type:none;
 
 }
@@ -105,23 +128,63 @@ nav a {
 
 nav a:hover {
     
-    background-color: #000000;
+    background-color: #ffffff;
     margin:10px;
     padding: 5px 10px;
-    color: #ff0000;
+    color: #7f7d7d;
     transition-duration: 0.4s;
     
 }
-.hover{
+/* .hover{
    
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #9b5757;
   
+} */
+.inline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
 }
-table {
+
+.inline-list li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the spacing between list items as needed */
+}
+
+.inline-list li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
+
+@media (min-width: 300px) and (max-width: 780px) {
+  .inline-list {
+      display: none; /* Hide the list when the window width is within the specified range */
+  }
+
+  .navbar-toggler {
+      display: block; /* Show the toggler button */
+  }
+}
+
+
+/* div {
+    margin: 20px;
+} */
+nav ul
+{
+    list-style: none;
+
+}
+.list
+{
+    display: inline;
+
+}
+/* table {
   margin: 0 auto;
   border-radius: 15px;
   padding: 10px;
@@ -138,72 +201,77 @@ table {
 th,td{
   padding: 25px;
   text-align: center;
-}
+} */
 .grid{
-  background-color: #a19494;
+  background-color: #000000;
   max-width: fit-content;
   border-radius: 20px;
   margin: 0 auto;
   display: grid;
-  border: 1px solid rgb(0, 0, 0);
-  padding: 5px;
+  border: 1px solid rgb(181, 63, 63);
+  padding: 10px;
   box-sizing: border-box; 
   grid-template-columns: repeat(4, 75px);
 
 }
 button{
-height: 60px;
-  background-color: #ffffff;
+height: 70px;
   border: 2px solid #ffffff;
   border-radius: 10px;
-  margin: 5px;
-  min-height: 50px;
   box-shadow: 0 8px 15px -7px rgb(0, 0, 0);
-  background: #ffffff;
+  background: #9a8787;
+  min-height: 50px;
+
+  
 }
 .Display {
   grid-column: span 4;
   border-radius: 10px;
   background-color: #ffffff;
+
 }
  .btn1{
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-  font-size: large;
+  font-size: 30px;
   font-weight: bold;
+  border-radius: 15px;
 }
  .btn2{
-background-color:gray;
-color: white;
-font-size: large;
+background-color:rgb(102, 255, 0);
+color: rgb(0, 0, 0);
+font-size: 30px;
 font-weight: bold;
+border-radius: 15px;
 }
 .btn3 {
-background-color: rgb(0, 64, 255);
+background-color: rgb(255, 0, 0);
 color: white;
-font-size: large;
+font-size:30px;
 font-weight: bold;
+border-radius: 15px;
 }
 .btn4 {
-  background-color: rgb(238, 0, 0);
+  background-color: rgb(255, 140, 0);
   color: white;
-  font-size: large;
+  font-size:30px;
   font-weight: bold;
+  border-radius: 15px;
 }
 
 .btn1:hover {
   background-color: gray;
 }
 .btn2:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(110, 111, 113);
 }
 .btn3:hover {
-  background-color: rgb(223, 0, 0);
+  background-color: rgb(43, 0, 255);
 }
 .btn4:hover {
-  background-color: rgba(6, 35, 255, 0.975);
+  background-color: rgba(255, 6, 6, 0.975);
 }
-input[type="text"],
+/* input[type="text"],
 input[type="Password"],
 input[type="tel"],
 input[type="email"],
@@ -245,8 +313,8 @@ input[type="submit"]:hover {
   margin: 10px;
   font-size: 20px;
   font-weight: bold;
- }
-form {
+ } */
+/* form {
     position: relative;
     border-radius: 15px;
     padding: 10px;
@@ -258,7 +326,8 @@ form {
     color: #ffffff;
     background-color: #4545ef;
     box-shadow: 2px 2px 4px #292828;
-  }
+  } */
+  
 
 
 
