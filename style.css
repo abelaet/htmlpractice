@@ -7,13 +7,6 @@
 body{
   background-color:rgb(255, 255, 255);
 }
-@media(min-width: 300px){
-  body{
-    background-color: #000000;
-  }
-
-}
-
     p{
         color: rgb(0, 0, 0);
     font-family: 'Times New Roman', Times, serif;
@@ -36,9 +29,10 @@ body{
     font-size: 20px;
 }
 .list{
-  display: flex;
+  
     justify-content: center;
     align-items: center;
+    list-style:lower-roman
     
 }
 .title{
@@ -68,10 +62,10 @@ body{
 
   }
   li{
-    list-style-position: inside;
+    text-align: center;
   }
   ol{
-    background-color: #a8a2a2;
+    background-color: #8a8a8a;
   }
   ol li {
     background: #a8a2a2;
@@ -81,9 +75,10 @@ body{
     margin-left: 25px;}
 a{
     text-decoration: none;
+    text-align: center;
     color: rgb(255, 255, 255);
     /* border: 2px solid rgb(255, 255, 255); */
-    padding: 2px;
+   
 
     /* border-radius: 10px; */
     /* box-shadow:rgb(133, 133, 194);
@@ -98,56 +93,99 @@ a{
     grid-template-columns: repeat(4,1fr);
   }
   
-  .wraper{
-    width: 500px;
-    display: flex;
-  }
   
-  nav {
-    background-color:  rgb(137, 137, 137);
+  
+  
+  /* nav {
+    background-color:  rgb(0, 0, 0);
     display: flex;
     justify-content: left;
-    padding: 0;
     margin: 0;
     overflow: hidden;
     box-shadow: 2px 2px 4px #ffffff;
     list-style-type:none;
 
-}
+} */
 
-nav a {
-    display: block;
+
+.navbar a {
+    display:inline-flex;
+    list-style: none;
     color: #ffffff;
-    text-align: center;
+   text-align: center;
     text-decoration: none;
-    margin:10px;
-    padding: 5px 10px;
-    border-radius: 5px;
+    margin:0 10px;
+    border-radius: 0px;
     transition: background-color 0.2s ease-in-out;
 }
 
-nav a:hover {
+.navbar a:hover {
     
-    background-color: #ffffff;
-    margin:10px;
-    padding: 5px 10px;
-    color: #7f7d7d;
-    transition-duration: 0.4s;
-    
+    background: #ffffff;
+    color: #000000;
+  text-align: center;
+    transition-duration: 0.4s; 
 }
-/* .hover{
+.navbar-links {
+  display: inline-flex;
+}
+
+.navbar-links a {
+  padding: 5px;
+  margin-left: 25px;
+  
+}
+
+.navbar-toggler {
+  display: none;
+}
+.btn-close{
+  padding: 1px;
+}
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+}
+@media(max-width:768px){
+  .navbar-toggler{
+    display: block;
+    padding: 5px;
+
+  }
+}
+
+
+nav {
+    background-color:  rgb(27, 27, 27);
+    display: inline-flex;
+    justify-content: left;
+    padding: 10px;
+    box-shadow: 2px 2px 4px #292828;
+}
+.nav {
+  padding: 2px;
+  
+}
+
+div{
+  margin: 20px;
+}
+nav ul{
+  list-style: none;
+}
+.hover{
    
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
     overflow: hidden;
     background-color: #9b5757;
   
-} */
+} 
 .inline-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin:0;
   display: inline;
 }
 
@@ -159,29 +197,13 @@ nav a:hover {
 .inline-list li:last-child {
   margin-right: 0; /* Remove margin from the last list item */
 }
-
-@media (min-width: 300px) and (max-width: 780px) {
-  .inline-list {
-      display: none; /* Hide the list when the window width is within the specified range */
-  }
-
-  .navbar-toggler {
-      display: block; /* Show the toggler button */
-  }
-}
-
-
 /* div {
     margin: 20px;
 } */
-nav ul
-{
-    list-style: none;
-
-}
 .list
 {
     display: inline;
+    
 
 }
 /* table {
@@ -206,9 +228,9 @@ th,td{
   background-color: #000000;
   max-width: fit-content;
   border-radius: 20px;
-  margin: 0 auto;
+  margin:  auto;
   display: grid;
-  border: 1px solid rgb(181, 63, 63);
+  border: 3px solid rgb(181, 63, 63);
   padding: 10px;
   box-sizing: border-box; 
   grid-template-columns: repeat(4, 75px);
@@ -216,14 +238,9 @@ th,td{
 }
 button{
 height: 70px;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 10px;
   box-shadow: 0 8px 15px -7px rgb(0, 0, 0);
-  background: #9a8787;
-  min-height: 50px;
-  
-
-  
 }
 .Display {
   grid-column: span 4;
@@ -237,6 +254,9 @@ height: 70px;
   font-size: 30px;
   font-weight: bold;
   border-radius: 15px;
+  margin-block: 5px;
+  margin-inline: 3px;
+  min-height: auto;
 }
  .btn2{
 background-color:rgb(102, 255, 0);
@@ -244,6 +264,8 @@ color: rgb(0, 0, 0);
 font-size: 30px;
 font-weight: bold;
 border-radius: 15px;
+margin-block: 5px;
+  margin-inline: 3px;
 }
 .btn3 {
 background-color: rgb(255, 0, 0);
@@ -251,6 +273,8 @@ color: white;
 font-size:30px;
 font-weight: bold;
 border-radius: 15px;
+margin-block: 5px;
+  margin-inline: 3px;
 }
 .btn4 {
   background-color: rgb(255, 140, 0);
@@ -258,6 +282,8 @@ border-radius: 15px;
   font-size:30px;
   font-weight: bold;
   border-radius: 15px;
+  margin-block: 5px;
+  margin-inline: 3px;
 }
 
 .btn1:hover {
@@ -328,6 +354,14 @@ input[type="submit"]:hover {
     background-color: #4545ef;
     box-shadow: 2px 2px 4px #292828;
   } */
+  
+  
+    
+
+  
+  
+
+  
   
 
 
