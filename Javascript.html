@@ -40,27 +40,6 @@
         const greeting= `welcome${name}`
         console.log(greeting)
     </script>
-    <input class="form-control" type="number" id="num1" name="Password" value="" placeholder="Enter a Number">
-    <input class="form-control" type="number" id="num2" name="Password" value="" placeholder="Enter a Number">
     
-    <button type="button" onclick="division()">divide</button>
-    <p id="res"></p>
-    <script>
-        function division(){
-
-            let num1=parseInt(document.getElementById("num1").value)
-            let num2=parseInt(document.getElementById("num2").value)
-            let result= num1/num2;
-            if(num2==0){
-             document.getElementById("res").innerHTML="a number can not be divied by zero";
-
-            }
-            else{
-                document.getElementById("res").innerHTML= result;
-            }
-}
-    </script>
-    
-
 </body>
 </html>
